@@ -1,0 +1,101 @@
+
+@import url('https://fonts.googleapis.com/css?family=Monoton');
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #333;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#video-background {
+
+  position: fixed;
+  right: 0; 
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
+  height: auto;
+  z-index: -100;
+}
+
+
+
+
+
+
+.text {
+  fill: none;
+  stroke-width: 6;
+  stroke-linejoin: round;
+  stroke-dasharray: 70 330;
+  stroke-dashoffset: 0;
+  -webkit-animation: stroke 6s infinite linear;
+  animation: stroke 6s infinite linear;
+
+}
+
+.text:nth-child(5n + 1) {
+  stroke: #F73859;
+  -webkit-animation-delay: -1.2s;
+  animation-delay: -1.2s;
+}
+.text:nth-child(5n + 2) {
+  stroke: rgba(64, 75, 105, 0.7);
+  -webkit-animation-delay: -2.4s;
+  animation-delay: -2.4s;
+}
+
+.text:nth-child(5n + 3) {
+  stroke: #404B69;
+  -webkit-animation-delay: -3.6s;
+  animation-delay: -3.6s;
+}
+
+.text:nth-child(5n + 4) {
+  stroke: #F73859;
+  -webkit-animation-delay: -4.8s;
+  animation-delay: -4.8s;
+}
+
+.text:nth-child(5n + 5) {
+  stroke: rgba(155, 0, 201, 0.24);
+  -webkit-animation-delay: -12s;
+  animation-delay: -12s;
+}
+
+@-webkit-keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+
+
+html, body {
+  height: 100%;
+}
+
+body {
+ 
+  background-size: .2em 100%;
+  font: 11.5em/1 "Monoton", Impact;
+    margin: 0;
+  padding: 0;
+  background: #000000;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
